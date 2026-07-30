@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  genai-app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+    restart: always
